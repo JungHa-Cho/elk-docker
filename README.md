@@ -1,3 +1,32 @@
+ELK 스택 싱글 노드로 테스트 환경 구성 가능한 쉘 스크립트 입니다.
+
+## 스펙
+- Bash Shell Script
+- Docker
+- Docker Elastic Search Container
+- Docker Kibana Container
+- Docker Beats Host Monitor Container
+- Docker Beats Docker Monitor Container
+- ELK STACK의 버전은 모두 7.5.1로 통일
+
+## Elastic Search
+
+- port 9200, 9300
+
+## Beats
+
+- Docker Server의 호스트 시스템 모니터링
+
+## Logstash
+
+- port 5044
+
+## Kibana
+
+- Docker Name으로 Elastic Search Link
+
+## deploy.sh
+```shell
 #!/bin/bash
 
 DOCKER_ES_NAME=es-single-test
@@ -138,3 +167,4 @@ docker run -itd --name=$DOCKER_CONTAINER_BEATS_NAME \
 echo ""
 
 docker ps -a
+```
