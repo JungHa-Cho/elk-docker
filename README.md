@@ -1,5 +1,7 @@
 ELK 스택 싱글 노드로 테스트 환경 구성 가능한 쉘 스크립트 입니다.
 
+## DOCKER COMPOSE 통일
+
 ## 스펙
 - Bash Shell Script
 - Docker
